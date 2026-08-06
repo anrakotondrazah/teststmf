@@ -394,11 +394,28 @@ export default function HomePage() {
       <Helmet>
         <title>STMF — Externalisation comptable et administrative en gestion locative</title>
         <meta name="description" content="STMF, spécialiste de l'externalisation comptable et administrative en gestion locative depuis Madagascar. Sous-traitance, relation clients et gestion administrative pour les administrateurs de biens." />
-        <meta name="keywords" content="STMF, gestion locative, location, sous-traitance, relation clients, gestion administrative, externalisation comptable" />
+        <meta name="keywords" content="STMF, gestion locative, externalisation, sous-traitance comptable, sous-traitance administrative, relation clients, administrateur de biens, Madagascar, France" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="STMF" />
+        <link rel="canonical" href="https://stmf-gestion-locative.com/" />
+
+        {/* Open Graph */}
         <meta property="og:title" content="STMF — Externalisation en gestion locative" />
-        <meta property="og:description" content="Une équipe d'experts de la gestion locative, formée pour répondre à tous vos besoins." />
+        <meta property="og:description" content="STMF accompagne les administrateurs de biens français avec une équipe d'experts formés à la gestion locative depuis Madagascar. Sous-traitance comptable, administrative et relation clients." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stmf-gestion-locative.com/" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:site_name" content="STMF Gestion Locative" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="STMF — Externalisation en gestion locative" />
+        <meta name="twitter:description" content="STMF accompagne les administrateurs de biens français avec une équipe d'experts depuis Madagascar." />
       </Helmet>
+
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={websiteSchema} />
+      <JsonLd data={faqSchema} />
       <Header />
       <main>
         <Hero />
