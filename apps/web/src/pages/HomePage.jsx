@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { JsonLd, organizationSchema, websiteSchema, faqSchema } from '@/components/JsonLd';
 import { motion } from 'framer-motion';
 import { Menu, X, Calculator, FileText, Headphones, ShieldCheck, Users, TrendingUp, Mail, Facebook, ArrowRight, CheckCircle2, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
